@@ -12,37 +12,23 @@
     <script src="main.js"></script>
 </head>
 <body scroll style="overflow-x: hidden;">
-    
-    <!-- ------------------------ fake content ----------------------------- -->
-    <div id="container" style="
-            background: yellow;
-            /* width: 100%;*/
-            height: 100%; 
+    <div id="title" style="
+            background: url(title-cloud.png) no-repeat;
             position: fixed;
             top: 0;
-            left: 50%;
-            margin:50px 0px;">
-            <div id="moon" style="
-                    border-radius: 50px;
-                    background: red;
-                    top:0;
-                    transform: translate(-50%, -50%);
-                    left:0;
-                    width: 50px;
-                    height: 50px;
-                    position: absolute;"></div>
-            <div id="sun" style="
-                    border-radius: 50px;
-                    background:orange;
-                    top:100%;
-                    transform: translate(-50%, -50%);
-                    left:100%;
-                    width: 50px;
-                    height: 50px;
-                    position: absolute;"></div>
+            left: 0;
+            height: 200px;
+            width: 300px;
+            background-size:contain;">
+        Hello    
+    </div>
+    <!-- ------------------------ rotating fake content ----------------------------- -->
+    <div id="container">
+            <div id="sun" class="skyva-element"></div>
+            <div id="moon" class="skyva-element" style="top:100%;"></div>
     </div>
     
-    <!-- ----------------------- end fake content -------------------------- -->
+    <!-- ----------------------- rotating content -------------------------- -->
 
     <!-- ------------------------ fake content ----------------------------- -->
     <h1 style="font-size: 2000px; background: red; visibility: hidden;">s</h1>
