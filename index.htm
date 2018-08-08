@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html ng-app="skyVA" >
+<html ng-app="skyVA">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,9 @@
     <script src="app.js"></script>
     <script src="main.js"></script>
 </head>
+
 <body scroll style="overflow-x: hidden;">
-    <div id="title" style="
+    <!-- <div id="title" style="
             background: url(title-cloud.png) no-repeat;
             position: fixed;
             top: 0;
@@ -21,18 +23,29 @@
             width: 300px;
             background-size:contain;">
         Hello    
+    </div> -->
+    <div id="skyva">
+        <div>
+            <div id="skyva-cloud-container" class="skyva-container">
+                <div id="skyva-cloud" class="skyva-element"></div>
+            </div>
+        </div>
+
+        <div>
+            <div id="skyva-sm-container" class="skyva-container">
+                <div id="skyva-sun" class="skyva-element"></div>
+                <div id="skyva-moon" class="skyva-element" style="top:100%;"></div>
+            </div>
+        </div>
+
+        <div id="skyva-light-container"></div>
     </div>
-    <!-- ------------------------ rotating fake content ----------------------------- -->
-    <div id="container">
-            <div id="sun" class="skyva-element"></div>
-            <div id="moon" class="skyva-element" style="top:100%;"></div>
-    </div>
-    
-    <!-- ----------------------- rotating content -------------------------- -->
+
 
     <!-- ------------------------ fake content ----------------------------- -->
-    <h1 style="font-size: 2000px; background: red; visibility: hidden;">s</h1>
+    <h1 style="font-size: 2000px; background: red; visibility: hidden;">Fake</h1>
     <!-- ----------------------- end fake content -------------------------- -->
 
 </body>
+
 </html>

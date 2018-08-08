@@ -3,21 +3,39 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
+    margin: 0px;
+}
+.skyva {
+    width: 100%;
+    height:100%;
 }
 .skyva-element {
     /*border-radius: 50px;
     background: red;*/
-    background: url(sun.png) no-repeat;
     top:0;
     transform: translate(-50%, -50%);
     left:0;
     width: 200px;
     height: 200px;
+    -webkit-transition: -webkit-transform 1s;
+    transition: transform 1s;
+}
+#skyva-moon, #skyva-sun {
     position: absolute;
+}
+#skyva-moon {
+    background: url(moon1.png) no-repeat;
     background-size: contain;
 }
-#container {
-    background: yellow;
+#skyva-sun {
+    background: url(sun1.png) no-repeat;
+    background-size: contain;
+}
+#skyva-cloud {
+    background: url(cloud1.png) no-repeat;
+    background-size: contain;
+}
+.skyva-container {
     /* width: 100%;*/
     height: 200%; 
     position: fixed;
@@ -26,3 +44,14 @@ body {
     margin:100px 0px;
     z-index: -99999;
 }
+#skyva-light-container {
+    width: 100%;
+    height: 100%;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -999;
+    background-color: #0f1165;
+}
+
